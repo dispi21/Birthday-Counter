@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    background: hsla(51, 100%, 50%, 1);
+    background: linear-gradient(180deg, 
+        hsla(51, 100%, 50%, 1) 0%, 
+        hsla(175, 66%, 51%, 1) 0%, 
+        hsla(97, 57%, 62%, 1) 42%, 
+        hsla(51, 100%, 50%, 1) 100%);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.countdown {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.countdown h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.emoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-size: 5rem; 
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
